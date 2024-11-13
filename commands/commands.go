@@ -1,6 +1,7 @@
 package commands
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/fatih/color"
@@ -21,7 +22,11 @@ func AboutMe() {
 func Scan() {
 
 }
-
+func SetKey(key string) {
+	os.Setenv("VirusTotalApiKey", key)
+	idk := os.Getenv("VirusTotalApiKey")
+	fmt.Println(idk)
+}
 func Quit() {
 	os.Exit(0)
 }

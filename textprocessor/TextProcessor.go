@@ -6,22 +6,17 @@ import (
 
 func Processor(command []string) {
 
-	m := make(map[string]func())
-
-	m[":do"] = commands.DoSomething
-	m[":info"] = commands.Info
-	m[":ab"] = commands.AboutMe
-	m[":q"] = commands.Quit
-
 	switch command[0] {
 	case string(":info"):
-		m[":info"]()
+		commands.Info()
 	case string(":do"):
-		m[":do"]()
+		commands.DoSomething()
 	case string(":ab"):
-		m[":ab"]()
+		commands.AboutMe()
 	case string(":q"):
-		m[":q"]()
+		commands.Quit()
+	case string(":setKey"):
+		commands.SetKey(command[1])
 	}
 
 }
