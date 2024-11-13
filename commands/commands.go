@@ -18,6 +18,10 @@ func AboutMe() {
 	color.Green("Greetings, Im Danny! I'm a software Engineer from the Greater NYC area. I have 3 years of professional experience now previously working at American Express as an Engineer 3")
 }
 
+func Scan() {
+
+}
+
 func Quit() {
 	os.Exit(0)
 }
