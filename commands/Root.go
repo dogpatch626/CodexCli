@@ -20,7 +20,7 @@ var rootCmd = &cobra.Command{
 		out, err := ran.Output()
 
 		if err != nil {
-			fmt.Println("brokey", err)
+			fmt.Println("Could not run: --help", err)
 		}
 
 		fmt.Println("\n", string(out))
