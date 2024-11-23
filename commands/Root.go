@@ -15,6 +15,7 @@ var rootCmd = &cobra.Command{
 	Long:  "Codex is a virus total cli built by dogpatch626 in Go",
 	Run: func(cmd *cobra.Command, args []string) {
 		banner.Banner()
+
 		ran := exec.Command("./CodexCli", "--help")
 
 		out, err := ran.Output()
