@@ -6,6 +6,6 @@ import (
 
 func Banner() {
 
-	banner := figure.NewColorFigure("Codex", "isometric1", "red", true)
+	banner := figure.NewColorFigure("Codex", "banner3-D", "white", true)
 	banner.Print()
 }
