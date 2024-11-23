@@ -10,7 +10,7 @@ var infoCmd = &cobra.Command{
 	Aliases: []string{"info"},
 	Short:   "CodexCli is a in development cli",
 	Run: func(cmd *cobra.Command, args []string) {
-		color.Red("CodexCli is a in development cli made in go as a project to learn what is even going on with this lang.")
+		color.Red("CodexCli is a in-development cli made in go as a project to learn what is even going on with this lang.")
 	},
 }
 
